@@ -8,6 +8,11 @@ import org.springframework.stereotype.Service;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * A service class responsible for sending an email.
+ * @author Theofanis Gkoufas
+ *
+ */
 @Service
 @Scope("prototype")
 @Data
@@ -17,6 +22,12 @@ public class EmailSenderService {
 	@Autowired
 	private JavaMailSender javaMailSender;
 	
+	/**
+	 * Given the appropriate information, an email is being sent.
+	 * @param to The address that we want to send an email to.
+	 * @param subject The title of the email.
+	 * @param text The content of the email.
+	 */
 	public void sendEmail(String to, String subject, String text) {
 		SimpleMailMessage mail = new SimpleMailMessage();
 		mail.setFrom("wisetask@outlook.com");

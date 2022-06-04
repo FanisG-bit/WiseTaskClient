@@ -9,6 +9,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+/**
+ * A class that conceptually represents an email that is scheduled to be sent.
+ * Basically, instances of this class are scheduled to be sent at a specific 
+ * date/time. When it is time, the run method executes and sends the email.
+ * @author Theofanis Gkoufas
+ *
+ */
 @Component
 @Scope("prototype")
 @Setter

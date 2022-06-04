@@ -9,6 +9,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import com.wisetaskclient.services.EmailCheckerTask;
 
+/**
+ * In the main method apart from all the other operations that are being automatically
+ * performed by Spring Boot, an instance in regards to email checking is being scheduled
+ * to be performed on a daily basis. By that I mean that the application checks daily 
+ * (at 12AM) in order to find whether there are emails (tasks) that needs to be send
+ * to the corresponding lecturers. The class responsible for that is "EmailCheckerTask".
+ * @author Theofanis Gkoufas
+ *
+ */
 @SpringBootApplication
 public class WiseTaskClientApplication {
 

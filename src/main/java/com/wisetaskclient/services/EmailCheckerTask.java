@@ -15,6 +15,15 @@ import com.wisetaskclient.entities.Task;
 import com.wisetaskclient.entities.Tasks;
 import lombok.NoArgsConstructor;
 
+/**
+ * A class responsible for checking whether there are emails that needs to be sent
+ * at the present day. An instance of this class is being scheduled to be performed daily.
+ * If an email (task) is found that needs to be sent today, it is being scheduled to
+ * be sent at the precise time, specified by the administrator in the settings of each
+ * entry.
+ * @author Theofanis Gkoufas
+ *
+ */
 @Service
 @NoArgsConstructor
 public class EmailCheckerTask extends TimerTask {
