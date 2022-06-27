@@ -23,7 +23,7 @@ public class AppConfig {
 	public DataSource getDataSource() {
 		DriverManagerDataSource dmds = new DriverManagerDataSource();
 		dmds.setUsername("newuser");
-		dmds.setPassword("9876543!@");
+		dmds.setPassword("");
 		dmds.setDriverClassName("com.mysql.cj.jdbc.Driver");
 		dmds.setUrl("jdbc:mysql://localhost:3306/catmms");
 		return dmds;
